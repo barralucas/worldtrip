@@ -1,13 +1,16 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Stack } from '@chakra-ui/react';
+import { Header } from '../components/Header';
+import { SlideBanner } from '../components/SlideBanner';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      Worldtrip
-    </div>
+    <Stack direction={'column'} maxWidth={'1440px'} margin={'0 auto'} align={'center'}>
+      <Header />
+      <SlideBanner />
+    </Stack>
   )
 }
 
